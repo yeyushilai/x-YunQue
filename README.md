@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-VMware Manager是一个基于FastAPI框架开发的VMware vSphere平台管理工具，提供了完整的RESTful API接口，用于管理数据中心、集群、文件夹和虚拟机等资源。
+VMware Manager 是一个基于 FastAPI 框架开发的 VMware vSphere 平台管理工具，提供了完整的 RESTful API 接口，用于管理数据中心、集群、文件夹和虚拟机等资源。
 
 ## 功能特性
 
@@ -14,7 +14,7 @@ VMware Manager是一个基于FastAPI框架开发的VMware vSphere平台管理工
   - 获取虚拟机详情
   - 虚拟机电源操作（开机、关机、重启、挂起）
 - **健康检查**：服务状态监控
-- **API文档**：自动生成的Swagger文档
+- **API文档**：自动生成的 Swagger 文档
 
 ## 技术栈
 
@@ -157,7 +157,7 @@ vmware-manager/
 
 ## 错误处理
 
-所有API接口返回统一的错误格式：
+所有 API 接口返回统一的错误格式：
 
 ```json
 {
@@ -174,7 +174,7 @@ vmware-manager/
 
 ## 日志管理
 
-项目使用loguru进行日志管理，日志文件保存在 `logs/` 目录下，默认按天轮转，保留7天。
+项目使用 loguru 进行日志管理，日志文件保存在 `logs/` 目录下，默认按天轮转，保留7天。
 
 
 ## 许可证
