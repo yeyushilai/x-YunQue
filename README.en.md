@@ -2,7 +2,7 @@
 
 ## Project Introduction
 
-VMware Manager is a VMware vSphere platform management tool developed based on the FastAPI framework. It provides complete RESTful API interfaces for managing resources such as datacenters, clusters, folders, and virtual machines.
+`VMware Manager` is a VMware vSphere platform management tool developed based on the FastAPI framework. It provides complete RESTful API interfaces for managing resources such as datacenters, clusters, folders, and virtual machines.
 
 ## Features
 
