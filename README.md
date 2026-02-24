@@ -1,8 +1,8 @@
-# VMware Manager
+# x-vmware-manager
 
 ## 项目简介
 
-`VMware Manager` 是一个基于 FastAPI 框架开发的 VMware vSphere 平台管理工具，提供了完整的 RESTful API 接口，用于管理数据中心、集群、文件夹和虚拟机等资源。
+`x-vmware-manager` 是一个基于 FastAPI 框架开发的 VMware vSphere 平台管理工具，提供了完整的 RESTful API 接口，用于管理数据中心、集群、文件夹和虚拟机等资源。
 
 ## 功能特性
 
