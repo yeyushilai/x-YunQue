@@ -1,8 +1,13 @@
-# x-vmware-manager
+# YunQue (云阙)
+
+> Source: Su Shi's "Water Melody" (水调歌头) — "I fear the jade towers and jeweled palaces, the heights are too cold... heavenly palaces above."
+
+**Cloud Palace**: A cloud data center built on vSphere, as magnificent as a palace in the heavens.
+**Management Gateway**: "Que" (阙) refers to the gate or watchtower of a palace, symbolizing this tool as the gateway to enter and manage the cloud.
 
 ## Project Introduction
 
-`x-vmware-manager` is a VMware vSphere platform management tool developed based on the FastAPI framework. It provides complete RESTful API interfaces for managing resources such as datacenters, clusters, folders, and virtual machines.
+`YunQue` is a VMware vSphere platform management tool developed based on the FastAPI framework. It provides complete RESTful API interfaces for managing resources such as datacenters, clusters, folders, and virtual machines.
 
 ## Features
 
@@ -129,7 +134,7 @@ The service will run at `http://localhost:8000`
 ## Project Structure
 
 ```
-vmware-manager/
+yunque/
 ├── app/                      # Application directory
 │   ├── core/                 # Core modules
 │   │   ├── config.py         # Configuration management
@@ -147,6 +152,7 @@ vmware-manager/
 │   ├── tools/                # VMware tools
 │   ├── __init__.py           # VMware class
 │   └── interface.py          # VMware interface
+├── tools/                    # General utility modules
 ├── swagger/                  # Swagger documentation directory
 │   ├── swagger.json          # Swagger documentation in JSON format
 │   └── swagger.yaml          # Swagger documentation in YAML format
