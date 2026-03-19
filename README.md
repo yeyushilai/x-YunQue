@@ -1,8 +1,16 @@
-# x-vmware-manager
+# 云阙 (YunQue)
+
+> 出处：苏轼《水调歌头》—"又恐琼楼玉宇，高处不胜寒... 天上宫阙。"
+
+
+
+**云端宫阙**：基于 vSphere 构建的云端数据中心，如同天上的宫阙一般宏伟。
+<br>
+**管理中心**："阙"是宫殿的门户与瞭望塔，象征本工具是进入和管理云端的大门。
 
 ## 项目简介
 
-`x-vmware-manager` 是一个基于 FastAPI 框架开发的 VMware vSphere 平台管理工具，提供了完整的 RESTful API 接口，用于管理数据中心、集群、文件夹和虚拟机等资源。
+`云阙 (YunQue)` 是一个基于 FastAPI 框架开发的 VMware vSphere 平台管理工具，提供了完整的 RESTful API 接口，用于管理数据中心、集群、文件夹和虚拟机等资源。
 
 ## 功能特性
 
@@ -129,7 +137,7 @@ python main.py
 ## 项目结构
 
 ```
-vmware-manager/
+yunque/
 ├── app/                      # 应用目录
 │   ├── core/                 # 核心模块
 │   │   ├── config.py         # 配置管理
@@ -147,6 +155,7 @@ vmware-manager/
 │   ├── tools/                # VMware工具
 │   ├── __init__.py           # VMware类
 │   └── interface.py          # VMware接口
+├── tools/                    # 通用工具模块
 ├── swagger/                  # Swagger文档目录
 │   ├── swagger.json          # JSON格式的Swagger文档
 │   └── swagger.yaml          # YAML格式的Swagger文档
