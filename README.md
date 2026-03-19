@@ -3,10 +3,11 @@
 > 出处：苏轼《水调歌头》—"又恐琼楼玉宇，高处不胜寒... 天上宫阙。"
 
 
+**云端宫阙**：基于 vSphere 构建的云端数据中心，如同天上的宫阙一般宏伟。  
+
+<br>  
 
 **云端宫阙**：基于 vSphere 构建的云端数据中心，如同天上的宫阙一般宏伟。
-<br>
-**管理中心**："阙"是宫殿的门户与瞭望塔，象征本工具是进入和管理云端的大门。
 
 ## 项目简介
 
@@ -55,11 +56,13 @@ uv sync
 #### 方式一：使用配置文件（推荐）
 
 1. 复制示例配置文件：
+
 ```bash
 copy config.yaml.example config.yaml
 ```
 
-2. 编辑 `config.yaml` 文件，填入你的实际配置：
+1. 编辑 `config.yaml` 文件，填入你的实际配置：
+
 ```yaml
 server:
   debug: true
@@ -112,21 +115,26 @@ python main.py
 ## API接口列表
 
 ### 健康检查
+
 - `GET /health` - 服务健康状态检查
 
 ### 数据中心管理
+
 - `GET /api/v1/dcs` - 获取数据中心列表
 - `GET /api/v1/dcs/{dc_id}` - 获取数据中心详情
 
 ### 集群管理
+
 - `GET /api/v1/dcs/{dc_id}/clusters` - 获取指定数据中心的集群列表
 - `GET /api/v1/dcs/{dc_id}/clusters/{cluster_id}` - 获取集群详情
 
 ### 文件夹管理
+
 - `GET /api/v1/dcs/{dc_id}/folders` - 获取指定数据中心的文件夹列表
 - `GET /api/v1/dcs/{dc_id}/folders/{folder_id}` - 获取文件夹详情
 
 ### 虚拟机管理
+
 - `GET /api/v1/dcs/{dc_id}/clusters/{cluster_id}/vms` - 获取指定集群的虚拟机列表
 - `GET /api/v1/dcs/{dc_id}/vms/{vm_id}` - 获取虚拟机详情
 - `POST /api/v1/dcs/{dc_id}/vms/{vm_id}/poweron` - 启动虚拟机
@@ -177,6 +185,7 @@ yunque/
 ```
 
 常见错误码：
+
 - `0` - 成功
 - `500` - 服务器内部错误
 - `404` - 资源不存在
@@ -184,7 +193,6 @@ yunque/
 ## 日志管理
 
 项目使用 loguru 进行日志管理，日志文件保存在 `logs/` 目录下，默认按天轮转，保留7天。
-
 
 ## 许可证
 
